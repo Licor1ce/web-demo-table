@@ -1,0 +1,136 @@
+/*
+*Fuentes:
+font-family: 'Libre Baskerville', serif;
+font-family: 'Inter', sans-serif;
+ */
+
+/*
+Colores:
+Color principal: #007c89
+Color texto: #241c15
+color de fondo blanco: #fff
+ */
+
+/*
+*Generales
+ */
+
+body {
+    background-color: #FBEECA;
+    font-family: 'Inter', sans-serif;
+    color:#241C15 ;
+}
+
+/*
+*Componentes
+ */
+
+/**Centrar contenido↓**/
+.title {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.container {
+    margin-inline: auto;
+    padding: 1rem;
+    max-width: 1000px;
+}
+
+/**Alinear los botones**/
+.ul-reset {
+    list-style: none;
+}
+
+/**Centrar imagen↓**/
+.image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button {
+    display: block;
+    padding: 2rem;
+    font-size: 1rem;
+    background-color: #007C89;
+    color: #ece7e7;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #FFB229;
+    color: #241C15;
+}
+
+.button--transparent {
+    background: transparent;
+    color: #007C89;
+}
+
+.link {
+    color: #007C89;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+*Tabla de precios
+ */
+.prices__columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: auto;
+}
+
+.info {
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #0c0c0c;
+    min-width: 10rem;
+}
+
+.info__alert {
+    display: none;
+    background-color: #ffff0d;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.info__alert--show {
+    display: block;
+}
+
+.info__description {
+    min-height: 6rem;
+}
+
+.info__block {
+    display: block;
+}
+
+.info__number-price {
+    font-size: 3rem;
+}
+
+.info__buy {
+    margin-block: 2rem;
+}
+
+.info__list {
+    list-style-image: url(../img/check.avif);
+    margin-left: -1rem;
+    min-height: 30rem;
+}
+
+.info__item {
+    margin-bottom: 1rem;
+}
